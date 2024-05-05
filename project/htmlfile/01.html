@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>틀린 그림 찾기 게임</title>
+    <link rel="stylesheet" type="text/css" href="../cssfile/css3.css">
+</head>
+
+<body>
+    <div class="canvas">
+        <canvas width="360" height="476" id="box2" style="background-color: lightblue"></canvas>
+        <canvas width="360" height="476" id="box3" style="background-color: lightblue"></canvas>
+    </div>
+    <div class="dottedbox"></div>
+    <div class="magnify">
+        <img src="../vectoricon/search.svg">
+    </div>
+    <div>
+        <div>
+            <img class="leftcount" src="https://postfiles.pstatic.net/MjAyMTAxMjRfMjE0/MDAxNjExNDE5OTc3Mzkx.lT8HHS9c8DLu63tFBB53VM4c732NZQ-8P-Ysj4UjNwAg.JWZ7XXDgDYNebeZgsKKCO47fuAIeGB1zJQRM1OPqLwQg.PNG.ovepje0224/leftcount.png?type=w773"><span id="numbersToGo"></span>
+        </div>
+        <div id="description">
+            <p id="finishMessage" style="color: red;"></p>
+            <p id="NofinishMessage" style="color: aqua;"></p>
+        </div>
+    </div>
+    <div id="myProgress">
+        <div id="myBar"></div>
+    </div>
+    <div class="ox_1">
+        <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTQw/MDAxNjExNDE5OTkwMzQ2.o3sLaMV1tUvARVqWDz4guPGg2uq8V63BOWWob1idhgIg.YsmDxHKjfWPQDqR1Y75krRiAqu2OE-93pXd1E7NeflIg.PNG.ovepje0224/o.png?type=w773">
+        <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTg4/MDAxNjExNDIwMDIxNTM1.e6WKgMRS8AVhl5RTcOw2ERBji7Od-cisK0Kn_Rd0z30g.CN5oWfEDIHPjswLrzcJv2xF7fMSvnyNjus5-CFemKt8g.PNG.ovepje0224/x.png?type=w773">
+        <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTQw/MDAxNjExNDE5OTkwMzQ2.o3sLaMV1tUvARVqWDz4guPGg2uq8V63BOWWob1idhgIg.YsmDxHKjfWPQDqR1Y75krRiAqu2OE-93pXd1E7NeflIg.PNG.ovepje0224/o.png?type=w773">
+        <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTg4/MDAxNjExNDIwMDIxNTM1.e6WKgMRS8AVhl5RTcOw2ERBji7Od-cisK0Kn_Rd0z30g.CN5oWfEDIHPjswLrzcJv2xF7fMSvnyNjus5-CFemKt8g.PNG.ovepje0224/x.png?type=w773">
+    </div>
+    <div class="ox_2">
+        <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTQw/MDAxNjExNDE5OTkwMzQ2.o3sLaMV1tUvARVqWDz4guPGg2uq8V63BOWWob1idhgIg.YsmDxHKjfWPQDqR1Y75krRiAqu2OE-93pXd1E7NeflIg.PNG.ovepje0224/o.png?type=w773">
+        <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTg4/MDAxNjExNDIwMDIxNTM1.e6WKgMRS8AVhl5RTcOw2ERBji7Od-cisK0Kn_Rd0z30g.CN5oWfEDIHPjswLrzcJv2xF7fMSvnyNjus5-CFemKt8g.PNG.ovepje0224/x.png?type=w773">
+        <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTQw/MDAxNjExNDE5OTkwMzQ2.o3sLaMV1tUvARVqWDz4guPGg2uq8V63BOWWob1idhgIg.YsmDxHKjfWPQDqR1Y75krRiAqu2OE-93pXd1E7NeflIg.PNG.ovepje0224/o.png?type=w773">
+        <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTg4/MDAxNjExNDIwMDIxNTM1.e6WKgMRS8AVhl5RTcOw2ERBji7Od-cisK0Kn_Rd0z30g.CN5oWfEDIHPjswLrzcJv2xF7fMSvnyNjus5-CFemKt8g.PNG.ovepje0224/x.png?type=w773">
+        <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTQw/MDAxNjExNDE5OTkwMzQ2.o3sLaMV1tUvARVqWDz4guPGg2uq8V63BOWWob1idhgIg.YsmDxHKjfWPQDqR1Y75krRiAqu2OE-93pXd1E7NeflIg.PNG.ovepje0224/o.png?type=w773">
+        <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTg4/MDAxNjExNDIwMDIxNTM1.e6WKgMRS8AVhl5RTcOw2ERBji7Od-cisK0Kn_Rd0z30g.CN5oWfEDIHPjswLrzcJv2xF7fMSvnyNjus5-CFemKt8g.PNG.ovepje0224/x.png?type=w773">
+    </div>
+    <div id="description">
+        <div>
+            <img class="lefttime" src="https://postfiles.pstatic.net/MjAyMTAxMjRfMjA1/MDAxNjExNDE5OTgwMTQ4.pnbtGYMNBVpJouDjTslfg3moibM4CTj2wwdR0hT420cg.f4axE3v0m4j0sDDNBUtjGFjW3gtgDXGQxqD4BY4w7Ssg.PNG.ovepje0224/lefttime.png?type=w773"> <span class="time">0</span>
+        </div>
+    </div>
+    <div>
+        <a href="../htmlfile/main.html"><img class="gamehome" src="https://postfiles.pstatic.net/MjAyMTAxMjRfMjkw/MDAxNjExNDE5OTY1MDc4.PsLr2nu4mDwAQfXoHVCZn1roZO4ugkPWmk4TCMiEzvog.P1JqBLPEaxxCQeOLEbFvmoc9XFcw02FhQ2ES601CW-cg.PNG.ovepje0224/gamehome.png?type=w773"></a>
+    </div>
+    <script async type="text/javascript" src="../javascriptfile/function3.js"></script>
+</body>
+
+</html>

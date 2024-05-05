@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+            background: url('https://postfiles.pstatic.net/MjAyMTAxMjRfMjE5/MDAxNjExNDE5OTM4Njgw.dmG6AyuFuGOnOg9VfTAotKwPLkFheKOtg6UtmHY8LiIg.ZT6BB0q9snw0i8oYiMlbJ4Ddz0lZcypAjapSnwAzO8Ig.PNG.ovepje0224/background.png?type=w773');
+            background-size: 100% auto;
+        }
+        .modal{
+            animation: appear 1s 1;
+            position: relative;
+            margin-top: 50px;
+            margin-left: 460px;
+        }
+        @keyframes appear {
+            0% {
+                transform: rotateX(-100deg);
+                transform-origin: top;
+                opacity: 0;
+            }
+            100% {
+                transform: rotateX(0deg);
+                transform-origin: top;
+                opacity: 1;
+            }
+        }
+        .modalbox{
+            position: absolute;
+            width: 600px;   
+            height: auto;
+            text-align: center;
+            filter: drop-shadow(5px 5px 8px black);
+            z-index: -1;
+        }
+        .timeover{
+            position: absolute;
+            width: 420px;
+            margin-top: 110px;
+            margin-left: 120px;
+            filter: drop-shadow(5px 5px 5px rgb(255, 187, 187));
+        }
+        .home{
+            position: absolute;
+            margin-top: 360px;
+            margin-left: 130px;
+        }
+        .homeicon{
+            width: 35px;
+            height: auto;
+        }
+        .hometext{
+            width: 140px;
+            height: auto;
+            filter: drop-shadow(5px 5px 5px rgb(202, 161, 255));
+        }
+        .retry{
+            position: absolute;
+            margin-top: 360px;
+            margin-left: 355px;
+        }
+        .retryicon{
+            width: 37px;
+            height: auto;
+        }
+        .retrytext{
+            width: 150px;
+            height: auto;
+            filter: drop-shadow(5px 5px 5px rgb(109, 238, 255));
+        }
+        .retry:hover{
+            animation: listen_to_my_heartbeat 0.7s infinite;
+        }
+        .home:hover{
+            animation: listen_to_my_heartbeat 0.7s infinite;
+        }
+        .yeahh{
+            position: absolute;
+            animation: jump-clock 1s infinite;
+        }
+        .clock{
+            z-index: 4;
+            position: absolute;
+            width: 100px;
+            height: auto;
+            margin-top: 230px;
+            margin-left: 270px;
+        }
+        @keyframes jump-clock {
+            15%{
+                transform: translateY(-40px);
+            }
+            30%{
+                transform: translateX(-30px) translateY(-40px);
+            }
+            35%{
+                transform: translateX(30px) translateY(-40px);
+            }
+            40%{
+                transform: translateX(-30px) translateY(-40px);
+            }
+            45%{
+                transform: translateX(30px) translateY(-40px);
+            }
+            50%{
+                transform: translateX(-30px) translateY(-40px);
+            }
+            55%{
+                transform: translateX(0px) translateY(-40px);
+            }
+            60%, 100%{
+                transform: translateY(0px) translateY(0px);
+            }
+        }
+        @keyframes listen_to_my_heartbeat{
+            0% {
+                transform: scale(0.9);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+        }
+        .shadow{
+            z-index: -1;
+            position: absolute;
+            height: 20px;
+            width: 60px;
+            background-color: rgb(223, 223, 223);
+            border-radius: 50%;
+            filter: blur(2px);
+            margin-left: 290px;
+            margin-top: 325px;
+            animation: shadow 1s infinite;
+        }
+        @keyframes shadow {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            20%{
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(0.3);
+                opacity: 0.3;
+            }
+            70%{
+                transform: scale(1);
+                opacity: 1;
+            }
+            
+            
+        }
+    .ox_1{
+        position: absolute;
+        display: inline-block;
+    }
+    .ox_1 img{
+        animation: oxmoving_1 4s infinite;
+        animation-timing-function: linear;
+    }
+    @keyframes oxmoving_1{
+        0%{
+            transform: translateX(-600px) translateY(150px);
+            opacity: 0;
+        }
+        10%{
+            opacity: 1;
+        }
+        50%{
+            opacity: 1;
+        }
+        100%{
+            transform: translateX(-250px) translateY(-130px);
+            opacity: 1;
+        }
+    }
+    .ox_1 img:nth-child(1){
+        position: absolute;
+        width: 130px;
+        
+    }
+    .ox_1 img:nth-child(2){
+        opacity: 0;
+        position: absolute;
+        width: 130px;
+        animation-delay: 1s; 
+    }
+    .ox_1 img:nth-child(3){
+        opacity: 0;
+        position: absolute;
+        width: 130px;
+        animation-delay: 2s; 
+    }
+    .ox_1 img:nth-child(4){
+        opacity: 0;
+        position: absolute;
+        width: 130px;
+        animation-delay: 3s; 
+    }
+
+    .ox_2{
+        position: absolute;
+        display: inline-block;
+    }
+    .ox_2 img{
+        animation: oxmoving_2 6s infinite;
+        animation-timing-function: linear;
+    }
+    @keyframes oxmoving_2{
+        0%{
+            transform: translateX(-620px) translateY(480px);
+            opacity: 0;
+        }
+        10%{
+            opacity: 1;
+        }
+        50%{
+            opacity: 1;
+        }
+        100%{
+            transform: translateX(250px) translateY(-160px);
+            opacity: 1;
+        }
+    }
+    .ox_2 img:nth-child(1){
+        z-index: -1;
+        position: absolute;
+        width: 130px;  
+    }
+    .ox_2 img:nth-child(2){
+        opacity: 0;
+        z-index: -1;
+        position: absolute;
+        width: 130px;
+        animation-delay: 1s; 
+    }
+    .ox_2 img:nth-child(3){
+        opacity: 0;
+        z-index: -1;
+        position: absolute;
+        width: 130px;
+        animation-delay: 2s; 
+    }
+    .ox_2 img:nth-child(4){
+        opacity: 0;
+        position: absolute;
+        width: 130px;
+        z-index: -1;
+        animation-delay: 3s; 
+    }
+    .ox_2 img:nth-child(5){
+        opacity: 0;
+        z-index: -1;
+        position: absolute;
+        width: 130px;
+        animation-delay: 4s; 
+    }
+    .ox_2 img:nth-child(6){
+        opacity: 0;
+        z-index: -1;
+        position: absolute;
+        width: 130px;
+        animation-delay: 5s; 
+    }
+    </style>
+</head>
+<body>
+    <div class="modal">
+        <div class="ox_1">
+            <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTg4/MDAxNjExNDIwMDIxNTM1.e6WKgMRS8AVhl5RTcOw2ERBji7Od-cisK0Kn_Rd0z30g.CN5oWfEDIHPjswLrzcJv2xF7fMSvnyNjus5-CFemKt8g.PNG.ovepje0224/x.png?type=w773">
+            <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTg4/MDAxNjExNDIwMDIxNTM1.e6WKgMRS8AVhl5RTcOw2ERBji7Od-cisK0Kn_Rd0z30g.CN5oWfEDIHPjswLrzcJv2xF7fMSvnyNjus5-CFemKt8g.PNG.ovepje0224/x.png?type=w773">
+            <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTg4/MDAxNjExNDIwMDIxNTM1.e6WKgMRS8AVhl5RTcOw2ERBji7Od-cisK0Kn_Rd0z30g.CN5oWfEDIHPjswLrzcJv2xF7fMSvnyNjus5-CFemKt8g.PNG.ovepje0224/x.png?type=w773">
+            <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTg4/MDAxNjExNDIwMDIxNTM1.e6WKgMRS8AVhl5RTcOw2ERBji7Od-cisK0Kn_Rd0z30g.CN5oWfEDIHPjswLrzcJv2xF7fMSvnyNjus5-CFemKt8g.PNG.ovepje0224/x.png?type=w773">
+        </div>
+        <div class="ox_2">
+            <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTg4/MDAxNjExNDIwMDIxNTM1.e6WKgMRS8AVhl5RTcOw2ERBji7Od-cisK0Kn_Rd0z30g.CN5oWfEDIHPjswLrzcJv2xF7fMSvnyNjus5-CFemKt8g.PNG.ovepje0224/x.png?type=w773">
+            <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTg4/MDAxNjExNDIwMDIxNTM1.e6WKgMRS8AVhl5RTcOw2ERBji7Od-cisK0Kn_Rd0z30g.CN5oWfEDIHPjswLrzcJv2xF7fMSvnyNjus5-CFemKt8g.PNG.ovepje0224/x.png?type=w773">
+            <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTg4/MDAxNjExNDIwMDIxNTM1.e6WKgMRS8AVhl5RTcOw2ERBji7Od-cisK0Kn_Rd0z30g.CN5oWfEDIHPjswLrzcJv2xF7fMSvnyNjus5-CFemKt8g.PNG.ovepje0224/x.png?type=w773">
+            <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTg4/MDAxNjExNDIwMDIxNTM1.e6WKgMRS8AVhl5RTcOw2ERBji7Od-cisK0Kn_Rd0z30g.CN5oWfEDIHPjswLrzcJv2xF7fMSvnyNjus5-CFemKt8g.PNG.ovepje0224/x.png?type=w773">
+            <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTg4/MDAxNjExNDIwMDIxNTM1.e6WKgMRS8AVhl5RTcOw2ERBji7Od-cisK0Kn_Rd0z30g.CN5oWfEDIHPjswLrzcJv2xF7fMSvnyNjus5-CFemKt8g.PNG.ovepje0224/x.png?type=w773">
+            <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTg4/MDAxNjExNDIwMDIxNTM1.e6WKgMRS8AVhl5RTcOw2ERBji7Od-cisK0Kn_Rd0z30g.CN5oWfEDIHPjswLrzcJv2xF7fMSvnyNjus5-CFemKt8g.PNG.ovepje0224/x.png?type=w773">
+        </div>
+        <img class="modalbox" src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTE1/MDAxNjExNDE5OTgzMTMw.0u6ADdgGZEJRl5szrZ6a9QJpEiTv0y2hRojyGcqgcdQg.hma-wrLo_ECrcvAOMUPRc6MN_PVCZmygeyZWb8rjF2Mg.PNG.ovepje0224/modal.png?type=w773">
+        <img class="timeover" src="https://postfiles.pstatic.net/MjAyMTAxMjRfNzcg/MDAxNjExNDIwMDE4NjQ3.YWvIkYcHQFovR1qRW7q_3_rZpTPHIVApmtXq2TasL6Ug.vRvCVXQ0CduzFzcbiJ51hv4YmRzFlGFO540CKbvQ2usg.PNG.ovepje0224/timeover.png?type=w773">
+        <a href="../htmlfile/main.html"><div class="home">
+            <img class="hometext" src="https://postfiles.pstatic.net/MjAyMTAxMjRfODIg/MDAxNjExNDE5OTY5Mjgz.-h7YwjJJbi307tV3PoxrgrWA0ctOPjVPBGwD2pajqXsg.O0gyQLjhlgX6F571f4i8UeN1lvba3y2QafxAETSGLW0g.PNG.ovepje0224/home.png?type=w773">
+            <img class="homeicon" src="../vectoricon/home.svg">
+        </div></a>
+        <a href="../htmlfile/123.html"><div class="retry">
+            <img class="retrytext" src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTE5/MDAxNjExNDE5OTk2NTMw.bINliwy83gEU2KgsXILiBwFcvEkZT0QXT9bILY6hzmog.VNDD14UXa-sW05EHD8f0LSZxErvDZBWlzKEbPWAzWIgg.PNG.ovepje0224/retry.png?type=w773">
+            <img class="retryicon" src="../vectoricon/refresh.svg">
+        </div></a>
+        <div class="yeahh">
+            <img class="clock" src="../vectoricon/clock.svg">
+        </div>
+        <div class="shadow"></div>
+    </div>
+</body>
+</html>

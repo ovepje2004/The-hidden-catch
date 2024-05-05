@@ -1,0 +1,219 @@
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-size: 100% auto;
+      background-image: url('https://postfiles.pstatic.net/MjAyMTAxMjRfMjE5/MDAxNjExNDE5OTM4Njgw.dmG6AyuFuGOnOg9VfTAotKwPLkFheKOtg6UtmHY8LiIg.ZT6BB0q9snw0i8oYiMlbJ4Ddz0lZcypAjapSnwAzO8Ig.PNG.ovepje0224/background.png?type=w773');
+    }
+    .dottedbox{
+      position: absolute;
+      z-index: -1;
+      margin-left: 393px;
+      margin-top: 35px;
+      width: 760px;
+      height: 490px;
+      border: 8px dotted #19D9FF;
+    }
+    .game-info {
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      display: flex;
+      justify-content: space-between;
+      width: 200px;
+    }
+    .magnify{
+      z-index: 2;
+      position: absolute;
+      width: 100px;
+      height: auto;
+      margin-top: 300px;
+      margin-left: 1140px;
+      animation: magnifymoving 5s infinite;
+      animation-delay: 1s;
+    }
+    @keyframes magnifymoving{
+      0%, 100%{
+      }
+      30%{
+          transform: translateY(-50px);
+      }
+      50%{
+        transform: translateY(100px);
+      }
+      70%{
+        transform: translateY(200px) translateX(-90px);
+      }
+    }
+    .time {
+      font-size: 30px;
+      color:#19D9FF;
+      font-weight: bolder;
+    }
+
+    .loading {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+
+    #box2 {
+      position: absolute;
+      background-image: url("../picturefile/아이유(틀린).jpg");
+      background-repeat: no-repeat;
+      cursor: help;
+      margin-left: 790px;
+      margin-top: 50px;
+    }
+    #box3 {
+      position: absolute;
+      margin-left: 410px;
+      margin-top: 50px;
+      background-image: url("../picturefile/아이유.jpg");
+      background-repeat: no-repeat;
+      cursor: help
+    }
+
+    #description {
+      display: inline-block;
+      text-align: left;
+    }
+    .canvas{
+      position: relative;
+    }
+    #numbersToGo{
+      font-size: 30px;
+      color:#19D9FF;
+      font-weight: bolder;
+    }
+    .lefttime{
+      width: 130px;
+      margin-left: 1200px;
+    }
+    .leftcount{
+      width: 145px;
+      margin-top: 160px;
+      margin-left: 1210px;
+    }
+    .gamehome{
+      width: 70px;
+      height: auto;
+      margin-top: 180px;
+      margin-left: 310px;
+    }
+    .ox_1{
+      position: relative;
+      display: inline-block;
+  }
+  .ox_1 img{
+      animation: oxmoving_1 4s infinite;
+      animation-timing-function: linear;
+  }
+  #myProgress{
+    position: absolute;
+    margin-top: 340px;  
+    margin-left: 590px;
+  }
+  #myBar {
+    width: 400px;
+    height: 30px;
+    background-color: red;
+  }
+  @keyframes oxmoving_1{
+      0%{
+          transform: translateX(-200px) translateY(-60px);
+          opacity: 0;
+      }
+      10%{
+          opacity: 1;
+      }
+      50%{
+          opacity: 1;
+      }
+      100%{
+          transform: translateX(200px) translateY(-360px);
+          opacity: 1;
+      }
+  }
+  .ox_1 img:nth-child(1){
+      position: absolute;
+      width: 130px;
+      z-index: -2;
+      
+  }
+  .ox_1 img:nth-child(2){
+      opacity: 0;
+      position: absolute;
+      width: 130px;
+      animation-delay: 1s; 
+  }
+  .ox_1 img:nth-child(3){
+      opacity: 0;
+      position: absolute;
+      width: 130px;
+      animation-delay: 2s; 
+  }
+  .ox_1 img:nth-child(4){
+      opacity: 0;
+      position: absolute;
+      width: 130px;
+      animation-delay: 3s; 
+  }
+
+  .ox_2{
+      position: relative;
+      display: inline-block;
+  }
+  .ox_2 img{
+    z-index: -2;
+      animation: oxmoving_2 6s infinite;
+      animation-timing-function: linear;
+  }
+  @keyframes oxmoving_2{
+      0%{
+          transform: translateX(-200px) translateY(270px);
+          opacity: 0;
+      }
+      10%{
+          opacity: 1;
+      }
+      50%{
+          opacity: 1;
+      }
+      100%{
+          transform: translateX(660px) translateY(-400px);
+          opacity: 1;
+      }
+  }
+  .ox_2 img:nth-child(1){
+      position: absolute;
+      width: 130px;  
+  }
+  .ox_2 img:nth-child(2){
+      opacity: 0;
+      position: absolute;
+      width: 130px;
+      animation-delay: 1s; 
+  }
+  .ox_2 img:nth-child(3){
+      opacity: 0;
+      position: absolute;
+      width: 130px;
+      animation-delay: 2s; 
+  }
+  .ox_2 img:nth-child(4){
+      opacity: 0;
+      position: absolute;
+      width: 130px;
+      animation-delay: 3s; 
+  }
+  .ox_2 img:nth-child(5){
+      opacity: 0;
+      position: absolute;
+      width: 130px;
+      animation-delay: 4s; 
+  }
+  .ox_2 img:nth-child(6){
+      opacity: 0;
+      position: absolute;
+      width: 130px;
+      animation-delay: 5s; 
+  }

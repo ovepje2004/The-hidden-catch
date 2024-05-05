@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+            background: url('https://postfiles.pstatic.net/MjAyMTAxMjRfMjE5/MDAxNjExNDE5OTM4Njgw.dmG6AyuFuGOnOg9VfTAotKwPLkFheKOtg6UtmHY8LiIg.ZT6BB0q9snw0i8oYiMlbJ4Ddz0lZcypAjapSnwAzO8Ig.PNG.ovepje0224/background.png?type=w773');
+            background-size: 100% auto;
+        }
+        .modal{
+            animation: appear 1s 1;
+            position: relative;
+            margin-top: 50px;
+            margin-left: 460px;
+        }
+        @keyframes appear {
+            0% {
+                transform: rotateX(-100deg);
+                transform-origin: top;
+                opacity: 0;
+            }
+            100% {
+                transform: rotateX(0deg);
+                transform-origin: top;
+                opacity: 1;
+            }
+        }
+        .modalbox{
+            position: absolute;
+            width: 600px;   
+            height: auto;
+            text-align: center;
+            filter: drop-shadow(5px 5px 8px black);
+            z-index: -1;
+        }
+        .stageclear{
+            position: absolute;
+            width: 420px;
+            margin-top: 120px;
+            margin-left: 120px;
+            filter: drop-shadow(5px 5px 5px rgb(255, 187, 187));
+        }
+        .home{
+            position: absolute;
+            margin-top: 360px;
+            margin-left: 110px;
+        }
+        .homeicon{
+            width: 35px;
+            height: auto;
+        }
+        .hometext{
+            width: 110px;
+            height: auto;
+            filter: drop-shadow(5px 5px 5px rgb(202, 161, 255));
+        }
+        .nextstage{
+            position: absolute;
+            margin-top: 360px;
+            margin-left: 290px;
+        }
+        .nextstageicon{
+            width: 37px;
+            height: auto;
+        }
+        .nextstagetext{
+            width: 240px;
+            height: auto;
+            filter: drop-shadow(5px 5px 5px rgb(109, 238, 255));
+        }
+        .nextstage:hover{
+            animation: listen_to_my_heartbeat 0.7s infinite;
+        }
+        .home:hover{
+            animation: listen_to_my_heartbeat 0.7s infinite;
+        }
+        .star{
+            position: absolute;
+          
+        }
+        .star img:nth-child(1){
+            opacity: 0;
+            z-index: 4;
+            position: absolute;
+            width: 70px;
+            height: auto;
+            margin-top: 250px;
+            margin-left: 190px;
+            animation: star 0.6s ease-in-out 1 forwards;
+            animation-delay: 0.6s;
+        }
+        .star img:nth-child(2){
+            opacity: 0;
+            z-index: 4;
+            position: absolute;
+            width: 70px;
+            height: auto;
+            margin-top: 200px;
+            margin-left: 290px;
+            animation: star 0.6s ease-in-out 1 forwards;
+            animation-delay: 1.0s;
+        }
+        .star img:nth-child(3){
+            opacity: 0;
+            z-index: 4;
+            position: absolute;
+            width: 70px;
+            height: auto;
+            margin-top: 250px;
+            margin-left: 390px;
+            animation: star 0.6s ease-in-out 1 forwards;
+            animation-delay: 1.4s;
+        }
+
+        @keyframes star{
+            0% {
+                transform: rotateY(-360deg);
+                opacity: 0;
+            }
+            100% {
+                transform: rotateY(0deg);
+                opacity: 1;
+            }
+
+        }
+        
+        @keyframes listen_to_my_heartbeat{
+            0% {
+                transform: scale(0.9);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+        }
+       
+    .ox_1{
+        position: absolute;
+        display: inline-block;
+    }
+    .ox_1 img{
+        animation: oxmoving_1 4s infinite;
+        animation-timing-function: linear;
+    }
+    @keyframes oxmoving_1{
+        0%{
+            transform: translateX(-600px) translateY(150px);
+            opacity: 0;
+        }
+        10%{
+            opacity: 1;
+        }
+        50%{
+            opacity: 1;
+        }
+        100%{
+            transform: translateX(-250px) translateY(-130px);
+            opacity: 1;
+        }
+    }
+    .ox_1 img:nth-child(1){
+        position: absolute;
+        width: 130px;
+        
+    }
+    .ox_1 img:nth-child(2){
+        opacity: 0;
+        position: absolute;
+        width: 130px;
+        animation-delay: 1s; 
+    }
+    .ox_1 img:nth-child(3){
+        opacity: 0;
+        position: absolute;
+        width: 130px;
+        animation-delay: 2s; 
+    }
+    .ox_1 img:nth-child(4){
+        opacity: 0;
+        position: absolute;
+        width: 130px;
+        animation-delay: 3s; 
+    }
+
+    .ox_2{
+        position: absolute;
+        display: inline-block;
+    }
+    .ox_2 img{
+        animation: oxmoving_2 6s infinite;
+        animation-timing-function: linear;
+    }
+    @keyframes oxmoving_2{
+        0%{
+            transform: translateX(-620px) translateY(480px);
+            opacity: 0;
+        }
+        10%{
+            opacity: 1;
+        }
+        50%{
+            opacity: 1;
+        }
+        100%{
+            transform: translateX(250px) translateY(-160px);
+            opacity: 1;
+        }
+    }
+    .ox_2 img:nth-child(1){
+        z-index: -1;
+        position: absolute;
+        width: 130px;  
+    }
+    .ox_2 img:nth-child(2){
+        opacity: 0;
+        z-index: -1;
+        position: absolute;
+        width: 130px;
+        animation-delay: 1s; 
+    }
+    .ox_2 img:nth-child(3){
+        opacity: 0;
+        z-index: -1;
+        position: absolute;
+        width: 130px;
+        animation-delay: 2s; 
+    }
+    .ox_2 img:nth-child(4){
+        opacity: 0;
+        position: absolute;
+        width: 130px;
+        z-index: -1;
+        animation-delay: 3s; 
+    }
+    .ox_2 img:nth-child(5){
+        opacity: 0;
+        z-index: -1;
+        position: absolute;
+        width: 130px;
+        animation-delay: 4s; 
+    }
+    .ox_2 img:nth-child(6){
+        opacity: 0;
+        z-index: -1;
+        position: absolute;
+        width: 130px;
+        animation-delay: 5s; 
+    }
+    </style>
+</head>
+<body>
+    <div class="modal">
+        <div class="ox_1">
+            <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTQw/MDAxNjExNDE5OTkwMzQ2.o3sLaMV1tUvARVqWDz4guPGg2uq8V63BOWWob1idhgIg.YsmDxHKjfWPQDqR1Y75krRiAqu2OE-93pXd1E7NeflIg.PNG.ovepje0224/o.png?type=w773">
+            <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTQw/MDAxNjExNDE5OTkwMzQ2.o3sLaMV1tUvARVqWDz4guPGg2uq8V63BOWWob1idhgIg.YsmDxHKjfWPQDqR1Y75krRiAqu2OE-93pXd1E7NeflIg.PNG.ovepje0224/o.png?type=w773">
+            <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTQw/MDAxNjExNDE5OTkwMzQ2.o3sLaMV1tUvARVqWDz4guPGg2uq8V63BOWWob1idhgIg.YsmDxHKjfWPQDqR1Y75krRiAqu2OE-93pXd1E7NeflIg.PNG.ovepje0224/o.png?type=w773">
+            <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTQw/MDAxNjExNDE5OTkwMzQ2.o3sLaMV1tUvARVqWDz4guPGg2uq8V63BOWWob1idhgIg.YsmDxHKjfWPQDqR1Y75krRiAqu2OE-93pXd1E7NeflIg.PNG.ovepje0224/o.png?type=w773">
+        </div>
+        <div class="ox_2">
+            <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTQw/MDAxNjExNDE5OTkwMzQ2.o3sLaMV1tUvARVqWDz4guPGg2uq8V63BOWWob1idhgIg.YsmDxHKjfWPQDqR1Y75krRiAqu2OE-93pXd1E7NeflIg.PNG.ovepje0224/o.png?type=w773">
+            <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTQw/MDAxNjExNDE5OTkwMzQ2.o3sLaMV1tUvARVqWDz4guPGg2uq8V63BOWWob1idhgIg.YsmDxHKjfWPQDqR1Y75krRiAqu2OE-93pXd1E7NeflIg.PNG.ovepje0224/o.png?type=w773">
+            <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTQw/MDAxNjExNDE5OTkwMzQ2.o3sLaMV1tUvARVqWDz4guPGg2uq8V63BOWWob1idhgIg.YsmDxHKjfWPQDqR1Y75krRiAqu2OE-93pXd1E7NeflIg.PNG.ovepje0224/o.png?type=w773">
+            <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTQw/MDAxNjExNDE5OTkwMzQ2.o3sLaMV1tUvARVqWDz4guPGg2uq8V63BOWWob1idhgIg.YsmDxHKjfWPQDqR1Y75krRiAqu2OE-93pXd1E7NeflIg.PNG.ovepje0224/o.png?type=w773">
+            <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTQw/MDAxNjExNDE5OTkwMzQ2.o3sLaMV1tUvARVqWDz4guPGg2uq8V63BOWWob1idhgIg.YsmDxHKjfWPQDqR1Y75krRiAqu2OE-93pXd1E7NeflIg.PNG.ovepje0224/o.png?type=w773">
+            <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTQw/MDAxNjExNDE5OTkwMzQ2.o3sLaMV1tUvARVqWDz4guPGg2uq8V63BOWWob1idhgIg.YsmDxHKjfWPQDqR1Y75krRiAqu2OE-93pXd1E7NeflIg.PNG.ovepje0224/o.png?type=w773">
+        </div>
+        <img class="modalbox" src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTE1/MDAxNjExNDE5OTgzMTMw.0u6ADdgGZEJRl5szrZ6a9QJpEiTv0y2hRojyGcqgcdQg.hma-wrLo_ECrcvAOMUPRc6MN_PVCZmygeyZWb8rjF2Mg.PNG.ovepje0224/modal.png?type=w773">
+        <img class="stageclear" src="https://postfiles.pstatic.net/MjAyMTAxMjRfMjcx/MDAxNjExNDIwMDA5MDU1.m2v2DWjyyDALsC1RWoDWOSkSwT5ozp1e2ciRrZdcw4Mg._x-EEmAgcwr-Vq2OGCo5tFizuh4Z5CFzqKD5bBiNbM0g.PNG.ovepje0224/stageclear.png?type=w773">
+        <a href="../htmlfile/main.html"><div class="home">
+            <img class="hometext" src="https://postfiles.pstatic.net/MjAyMTAxMjRfODIg/MDAxNjExNDE5OTY5Mjgz.-h7YwjJJbi307tV3PoxrgrWA0ctOPjVPBGwD2pajqXsg.O0gyQLjhlgX6F571f4i8UeN1lvba3y2QafxAETSGLW0g.PNG.ovepje0224/home.png?type=w773">
+            <img class="homeicon" src="../vectoricon/home.svg">
+        </div></a>
+        <a href="../htmlfile/123_03.html"><div class="nextstage">
+            <img class="nextstagetext" src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTAx/MDAxNjExNDE5OTg2MTA4.GqiErzuz5_NIhQ5eKgNsNHfIGrzX2OmZW5dEEL3T09gg.NzcdCov2qVceTM_VdGW2u8ztTCgydZxrxRXuwJOwz4og.PNG.ovepje0224/nextstage.png?type=w773">
+            <img class="nextstageicon" src="../vectoricon/nextstageicon.svg">
+        </div></a>
+        <div class="star">
+            <img src="../vectoricon/star.svg">
+            <img src="../vectoricon/star.svg">
+            <img src="../vectoricon/star.svg">
+        </div>
+    </div>
+</body>
+</html>

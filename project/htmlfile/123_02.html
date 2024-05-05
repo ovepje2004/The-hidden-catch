@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #2D4385;
+            display: flex;
+        }
+        .circlemove{
+            position: relative;
+            opacity: 0;
+            margin-top: 165px;
+            margin-left: 588px;
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            border: 30px solid rgb(255, 255, 255);
+            border-radius: 50%;
+            border-top-color:#19D9FF;
+            animation: circlemoving 1s 3;
+            animation-delay: 2s;
+        }
+        @keyframes circlemoving{
+            to{
+                opacity: 1;
+                transform: rotate(360deg);
+            }
+        }
+        .rur{
+            animation: hide 1.5s forwards;
+        }
+        .are_you_ready{
+            position: absolute;
+            margin-top: 290px;
+            margin-left: 100px;
+            width: 1350px;
+            animation: are_you_ready 0.5s 1 forwards;
+        }
+        @keyframes are_you_ready{
+            0% {
+                transform: scale(0.5);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        @keyframes hide {
+            99%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+        .firework{
+            margin-left: 300px;
+            margin-bottom: 240px;
+            position: relative;
+        }
+        .explosion{
+            z-index: -1;
+            position: absolute;
+            left: -2px;
+            bottom: 0;
+            width: 4px;
+            height: 80px;
+            transform-origin: 50% 100%;
+            background-color: #2D4385;
+        }
+        .explosion::before{
+            opacity: 0;
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 100%;
+            height: 40px;
+            background-color: #19D9FF;
+            animation: explosion 0.3s ease-in-out 1 forwards;
+            animation-delay: 0.5s;
+        }
+        @keyframes explosion{
+            0%{
+                top: 100%;
+                opacity: 0;
+            }
+            0.1%{
+                top: 100%;
+                opacity: 1;
+            }
+            99.9%{
+                top: -50%;
+                opacity: 1;
+            }
+            100%{
+                top: -50%;
+                opacity: 0;
+            }
+
+        }
+        .explosion:nth-child(1){
+            transform: rotate(0deg) translateY(-15px);
+        }
+        .explosion:nth-child(2){
+            transform: rotate(30deg) translateY(-15px);
+        }
+        .explosion:nth-child(3){
+            transform: rotate(60deg) translateY(-15px);
+        }
+        .explosion:nth-child(4){
+            transform: rotate(90deg) translateY(-15px);
+        }
+        .explosion:nth-child(5){
+            transform: rotate(120deg) translateY(-15px);
+        }
+        .explosion:nth-child(6){
+            transform: rotate(150deg) translateY(-15px);
+        }
+        .explosion:nth-child(7){
+            transform: rotate(180deg) translateY(-15px);
+        }
+        .explosion:nth-child(8){
+            transform: rotate(210deg) translateY(-15px);
+        }
+        .explosion:nth-child(9){
+            transform: rotate(240deg) translateY(-15px);
+        }
+        .explosion:nth-child(10){
+            transform: rotate(270deg) translateY(-15px);
+        }
+        .explosion:nth-child(11){
+            transform: rotate(300deg) translateY(-15px);
+        }
+        .explosion:nth-child(12){
+            transform: rotate(330deg) translateY(-15px);
+        }
+        
+        .count321{
+            position: absolute;
+            margin-top: 268px;
+            margin-left: 710px;
+        }
+        #count3{
+            opacity: 0;
+            position: absolute;
+            width: 110px;
+            height: auto;
+            animation: countdown 1s ;
+            animation-delay: 2s;
+        }
+        #count2{
+            opacity: 0;
+            position: absolute;
+            width: 110px;
+            height: auto;
+            animation: countdown 1s ;
+            animation-delay: 3s;
+        }
+        #count1{
+            position: absolute;
+            margin-top: 268px;
+            margin-left: 700px;
+            opacity: 0;
+            width: 110px;
+            animation: countdown 1s ;
+            animation-delay: 4s;
+        }
+        @keyframes countdown{
+            0% {
+                transform: scale(0.5);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            55%{
+                transform: scale(0.9);
+                opacity: 1;
+            }
+            57%{
+                transform: scale(1);
+                opacity: 1;
+            }
+            100%{
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+    </style>
+    </style>
+    <script> 
+        function Timer() { 
+            setTimeout("locateKap()",5000); 
+         } 
+        function locateKap(){
+            location.replace("../htmlfile/02.html");
+        }
+    </script> 
+    <script>
+        cnt = 5; 
+        function countdown() {
+            if(cnt == 0){
+                locateKap();
+            }else {
+                setTimeout("countdown()",1000);
+                cnt--;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="rur">
+        <img class="are_you_ready" src="../textpng/are_you_ready.png">
+    </div>
+    <div class="circlemove"></div>
+    <div id="choonDiv"></div>
+    <div class="firework">
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+        <div class="explosion"></div>
+    </div>
+    <div class="count321">
+        <img id="count3" src="https://postfiles.pstatic.net/MjAyMTAxMjRfMiAg/MDAxNjExNDE5OTI1Nzc4.f9CHO2ICYNh03PfYNq7tSqmCuuVw_xf7ti6Y4XZq6DQg.WYS5uA5-w3b8El4m0m1WtAgrYLIZn9-3TNfDh9xOgtwg.PNG.ovepje0224/3.png?type=w773">
+        <img id="count2" src="https://postfiles.pstatic.net/MjAyMTAxMjRfMjgy/MDAxNjExNDE5OTIxMDEy.fbP8ODm0OZ3NkqrISilLthTCtrZ-gx8Rr0JI_oefdBwg.i-jlkApTh-pXWs518pIGcqbUsPFGKGDaGCDgBEVaNI8g.PNG.ovepje0224/2.png?type=w773">
+    </div>
+    <img id="count1" src="https://postfiles.pstatic.net/MjAyMTAxMjRfMjU1/MDAxNjExNDE5OTEzODY4.4vLp1Wcsx-fDEKQ2prEfJy30epZWWEtR5NP1W5r9cM4g.WFayFolBRoQ8T39NmFJccE8Kyqc8eeoz0qR8Yd2ls2kg.PNG.ovepje0224/1.png?type=w773">
+    
+<script>countdown();</script>
+</body>
+</html>

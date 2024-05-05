@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        body{
+            padding:0;
+            margin: 0;
+            background-size: 100% auto;
+            background-image: url('https://postfiles.pstatic.net/MjAyMTAxMjRfMjE5/MDAxNjExNDE5OTM4Njgw.dmG6AyuFuGOnOg9VfTAotKwPLkFheKOtg6UtmHY8LiIg.ZT6BB0q9snw0i8oYiMlbJ4Ddz0lZcypAjapSnwAzO8Ig.PNG.ovepje0224/background.png?type=w773');
+        }
+        @keyframes OXmoving{
+            
+        }
+        .titlecanvas{
+            margin-left: 250px;
+            padding: 0;
+
+        }
+        .title{
+            z-index: 2;
+            height: 50px;
+            width: 50px;
+            position: relative;
+            animation-name: bounce;
+            animation-duration:0.5s;
+            animation-iteration-count:1;
+            animation-direction:alternate;
+            animation-fill-mode: forwards
+        }
+        @keyframes bounce {
+            0% {
+                transform: translateY(0px);
+                animation-timing-function: ease-in;
+            
+            }
+            50% {
+                transform: translateY(300px);
+                animation-timing-function: ease-out;
+              ;
+            }
+            65% {
+                transform: translateY(250px);
+                animation-timing-function: ease-in;
+            }
+            80% {
+                transform: translateY(300px);
+                animation-timing-function: ease-out;
+            }
+            90% {
+                transform: translateY(270px);
+                animation-timing-function: ease-in;
+            }
+  
+            100% {
+                transform: translateY(300px);
+                animation-timing-function: ease-out;
+        }
+    }
+    .ox_1{
+        position: relative;
+        display: inline-block;
+    }
+    .ox_1 img{
+        animation: oxmoving_1 4s infinite;
+        animation-timing-function: linear;
+    }
+    @keyframes oxmoving_1{
+        0%{
+            transform: translateX(-200px) translateY(160px);
+            opacity: 0;
+        }
+        10%{
+            opacity: 1;
+        }
+        50%{
+            opacity: 1;
+        }
+        100%{
+            transform: translateX(230px) translateY(-160px);
+            opacity: 1;
+        }
+    }
+    .ox_1 img:nth-child(1){
+        position: absolute;
+        width: 130px;
+        
+    }
+    .ox_1 img:nth-child(2){
+        opacity: 0;
+        position: absolute;
+        width: 130px;
+        animation-delay: 1s; 
+    }
+    .ox_1 img:nth-child(3){
+        opacity: 0;
+        position: absolute;
+        width: 130px;
+        animation-delay: 2s; 
+    }
+    .ox_1 img:nth-child(4){
+        opacity: 0;
+        position: absolute;
+        width: 130px;
+        animation-delay: 3s; 
+    }
+
+    .ox_2{
+        position: relative;
+        display: inline-block;
+    }
+    .ox_2 img{
+        animation: oxmoving_2 6s infinite;
+        animation-timing-function: linear;
+    }
+    @keyframes oxmoving_2{
+        0%{
+            transform: translateX(-200px) translateY(480px);
+            opacity: 0;
+        }
+        10%{
+            opacity: 1;
+        }
+        50%{
+            opacity: 1;
+        }
+        100%{
+            transform: translateX(660px) translateY(-160px);
+            opacity: 1;
+        }
+    }
+    .ox_2 img:nth-child(1){
+        position: absolute;
+        width: 130px;  
+    }
+    .ox_2 img:nth-child(2){
+        opacity: 0;
+        position: absolute;
+        width: 130px;
+        animation-delay: 1s; 
+    }
+    .ox_2 img:nth-child(3){
+        opacity: 0;
+        position: absolute;
+        width: 130px;
+        animation-delay: 2s; 
+    }
+    .ox_2 img:nth-child(4){
+        opacity: 0;
+        position: absolute;
+        width: 130px;
+        animation-delay: 3s; 
+    }
+    .ox_2 img:nth-child(5){
+        opacity: 0;
+        position: absolute;
+        width: 130px;
+        animation-delay: 4s; 
+    }
+    .ox_2 img:nth-child(6){
+        opacity: 0;
+        position: absolute;
+        width: 130px;
+        animation-delay: 5s; 
+    }
+    #start{
+        position: absolute;
+        z-index: 2;
+        margin-top: 330px;
+        margin-left: 620px;
+    }
+    #start{
+        animation: Imhere 1s;
+        animation-delay: 1.5s;
+        animation-fill-mode: forwards;
+        
+    }
+    @keyframes Imhere{
+        0% {
+            transform: scale(0.8);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    #start:hover{
+        animation: listen_to_my_heartbeat 0.7s infinite;
+        animation-fill-mode: forwards;
+        transition: all 0.3s ease-in-out;
+    }
+    @keyframes listen_to_my_heartbeat{
+        0% {
+            transform: scale(0.9);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    </style>
+    
+</head>
+<body>
+    <div class = "titlecanvas">
+        <div class = "title">
+            <img src="https://blogfiles.pstatic.net/MjAyMTAxMjRfMjQz/MDAxNjExNDIwMDAzOTk2.6xscsmFWAfXRiYBfoYs_nz4HrFEIRlWPQt-dm_zW7Gwg.FSc3l2lZPlAhWuw_yQ6LBvlJ0coxaHOESL6mc17TGs4g.PNG.ovepje0224/spot_the_defference.png" widht="70px" height="70px">
+        </div>
+    </div>
+    <div class="ox_1">
+        <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTQw/MDAxNjExNDE5OTkwMzQ2.o3sLaMV1tUvARVqWDz4guPGg2uq8V63BOWWob1idhgIg.YsmDxHKjfWPQDqR1Y75krRiAqu2OE-93pXd1E7NeflIg.PNG.ovepje0224/o.png?type=w773">
+        <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTg4/MDAxNjExNDIwMDIxNTM1.e6WKgMRS8AVhl5RTcOw2ERBji7Od-cisK0Kn_Rd0z30g.CN5oWfEDIHPjswLrzcJv2xF7fMSvnyNjus5-CFemKt8g.PNG.ovepje0224/x.png?type=w773">
+        <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTQw/MDAxNjExNDE5OTkwMzQ2.o3sLaMV1tUvARVqWDz4guPGg2uq8V63BOWWob1idhgIg.YsmDxHKjfWPQDqR1Y75krRiAqu2OE-93pXd1E7NeflIg.PNG.ovepje0224/o.png?type=w773">
+        <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTg4/MDAxNjExNDIwMDIxNTM1.e6WKgMRS8AVhl5RTcOw2ERBji7Od-cisK0Kn_Rd0z30g.CN5oWfEDIHPjswLrzcJv2xF7fMSvnyNjus5-CFemKt8g.PNG.ovepje0224/x.png?type=w773">
+    </div>
+    <div class="ox_2">
+        <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTQw/MDAxNjExNDE5OTkwMzQ2.o3sLaMV1tUvARVqWDz4guPGg2uq8V63BOWWob1idhgIg.YsmDxHKjfWPQDqR1Y75krRiAqu2OE-93pXd1E7NeflIg.PNG.ovepje0224/o.png?type=w773">
+        <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTg4/MDAxNjExNDIwMDIxNTM1.e6WKgMRS8AVhl5RTcOw2ERBji7Od-cisK0Kn_Rd0z30g.CN5oWfEDIHPjswLrzcJv2xF7fMSvnyNjus5-CFemKt8g.PNG.ovepje0224/x.png?type=w773">
+        <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTQw/MDAxNjExNDE5OTkwMzQ2.o3sLaMV1tUvARVqWDz4guPGg2uq8V63BOWWob1idhgIg.YsmDxHKjfWPQDqR1Y75krRiAqu2OE-93pXd1E7NeflIg.PNG.ovepje0224/o.png?type=w773">
+        <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTg4/MDAxNjExNDIwMDIxNTM1.e6WKgMRS8AVhl5RTcOw2ERBji7Od-cisK0Kn_Rd0z30g.CN5oWfEDIHPjswLrzcJv2xF7fMSvnyNjus5-CFemKt8g.PNG.ovepje0224/x.png?type=w773">
+        <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTQw/MDAxNjExNDE5OTkwMzQ2.o3sLaMV1tUvARVqWDz4guPGg2uq8V63BOWWob1idhgIg.YsmDxHKjfWPQDqR1Y75krRiAqu2OE-93pXd1E7NeflIg.PNG.ovepje0224/o.png?type=w773">
+        <img src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTg4/MDAxNjExNDIwMDIxNTM1.e6WKgMRS8AVhl5RTcOw2ERBji7Od-cisK0Kn_Rd0z30g.CN5oWfEDIHPjswLrzcJv2xF7fMSvnyNjus5-CFemKt8g.PNG.ovepje0224/x.png?type=w773">
+    </div>
+    <a href="../htmlfile/123.html"><img id="start" src="https://postfiles.pstatic.net/MjAyMTAxMjRfMTg5/MDAxNjExNDIwMDE1MTgx.B_DOUjPMmuo75K0rdwitXKMikkBwejND7lsnE40gMsog.qPZ4SV4Ji3Ep051qoeNJrrdQHj6j5LmCfAWiLqTmYPMg.PNG.ovepje0224/start.png?type=w773" width="250px" height="auto"></a>
+</body>
+</html>
